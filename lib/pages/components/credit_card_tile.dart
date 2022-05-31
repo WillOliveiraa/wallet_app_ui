@@ -24,16 +24,23 @@ class CreditCardTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(35),
         color: color,
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: Colors.grey.withOpacity(0.5),
+        //     spreadRadius: 5,
+        //     blurRadius: 7,
+        //     offset: const Offset(0, 3), // changes position of shadow
+        //   ),
+        // ],
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 5,
-            blurRadius: 7,
-            offset: const Offset(0, 3), // changes position of shadow
+            color: const Color(0xFFbfc3d0).withOpacity(0.5),
+            blurRadius: 5,
+            offset: const Offset(0, 10),
           ),
         ],
       ),

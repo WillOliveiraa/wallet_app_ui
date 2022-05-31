@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallet_app_ui/shared/app_colors.dart';
 
 class ActionButton extends StatelessWidget {
   const ActionButton({
@@ -21,13 +22,20 @@ class ActionButton extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Colors.white,
-            boxShadow: const [
+            boxShadow: [
               BoxShadow(
-                color: Colors.black26,
-                offset: Offset(0.0, 2.0),
-                blurRadius: 4.0,
+                color: const Color(0xFFbfc3d0).withOpacity(0.2),
+                blurRadius: 5,
+                offset: const Offset(0, 10),
               ),
             ],
+            // boxShadow: const [
+            //   BoxShadow(
+            //     color: Colors.black26,
+            //     offset: Offset(0.0, 2.0),
+            //     blurRadius: 4.0,
+            //   ),
+            // ],
           ),
           child: Container(
             padding: const EdgeInsets.all(10),
@@ -57,7 +65,7 @@ class ActionButton extends StatelessWidget {
           style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            color: Color(0xFFb5b9d1),
+            color: AppColors.primaryTextColor,
           ),
         )
       ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:wallet_app_ui/pages/components/credit_card_tile.dart';
 import 'package:wallet_app_ui/pages/flag_type.dart';
+import 'package:wallet_app_ui/shared/app_colors.dart';
 
 class CardList extends StatelessWidget {
   const CardList({
@@ -54,8 +55,8 @@ class CardList extends StatelessWidget {
           controller: pageController,
           count: 3,
           effect: const ExpandingDotsEffect(
-            activeDotColor: Color(0xFF798296),
-            dotColor: Color(0xFFbfc3d0),
+            activeDotColor: AppColors.activeDotColor,
+            dotColor: AppColors.inactiveDocColor,
           ),
         )
       ],
